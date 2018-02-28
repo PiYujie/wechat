@@ -1,7 +1,11 @@
 <template>
 	<div>
 		<h3>
+<<<<<<< HEAD
 			<img src="/img/return.jpg" @click="toMine"/></a><span v-text="title"></span>
+=======
+			<img src="../../img/return.jpg" @click="toMine"/></a><span v-text="title"></span>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</h3>
 		<div class="bett margins">
 			<h4>
@@ -15,7 +19,11 @@
 			<h4>
 				<span>手机号</span>
 				<p>
+<<<<<<< HEAD
 					<img src="/img/locked.png"/>
+=======
+					<img src="../../img/locked.png"/>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<em v-text="num">13368037646</em>
 				</p>
 			</h4>
@@ -34,7 +42,11 @@
 			<h4>
 				<span>账号保护</span>
 				<p>
+<<<<<<< HEAD
 					<img src="/img/locked.png"/>
+=======
+					<img src="../../img/locked.png"/>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<em>已保护</em>
 				</p>
 			</h4>
@@ -74,7 +86,11 @@
 	    	var _this = this;
 	    	$.ajax({
 				type:"post",
+<<<<<<< HEAD
 				url:"http://www.piyujie.top:5555/getMessAll",
+=======
+				url:"http://localhost:3000/getMessAll",
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				data:{
 					id:Number(_this.$store.state.id)
 				},

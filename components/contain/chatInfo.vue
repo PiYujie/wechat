@@ -2,7 +2,11 @@
 	<div>
 		<div class="chatTitle">
 			<p>
+<<<<<<< HEAD
 				<a href="#/chatdetail"><img src="/img/leftsanjiao.png" /></a>返回</p>
+=======
+				<a href="#/chatdetail"><img src="../../img/leftsanjiao.png" /></a>返回</p>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			<span>聊天详情</span>
 			<b></b>
 		</div>
@@ -12,7 +16,11 @@
 				<span v-text="chatName"></span>
 			</p>
 			<p class="jiaBox">
+<<<<<<< HEAD
 				<img src="/img/jia.png" />
+=======
+				<img src="../../img/jia.png" />
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			</p>
 		</div>
 		<section>
@@ -25,17 +33,29 @@
 				</p>
 			</div>
 			<div class="set">
+<<<<<<< HEAD
 				<p><em>聊天文件</em><span><img src="/img/right.jpg"/></span></p>
 			</div>
 			<div class="set">
 				<p><em>设置当前聊天背景</em><span><a href="#"><img src="/img/right.jpg"/></a></span></p>
 				<p><em>查找聊天内容</em><span><a href="#"><img src="/img/right.jpg"/></a></span></p>
+=======
+				<p><em>聊天文件</em><span><img src="../../img/right.jpg"/></span></p>
+			</div>
+			<div class="set">
+				<p><em>设置当前聊天背景</em><span><a href="#"><img src="../../img/right.jpg"/></a></span></p>
+				<p><em>查找聊天内容</em><span><a href="#"><img src="../../img/right.jpg"/></a></span></p>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			</div>
 			<div class="set">
 				<p><em>清空聊天记录</em><span></span></p>
 			</div>
 			<div class="set">
+<<<<<<< HEAD
 				<p><em>投诉</em><span><a href="#"><img src="/img/right.jpg"/></a></span></p>
+=======
+				<p><em>投诉</em><span><a href="#"><img src="../../img/right.jpg"/></a></span></p>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			</div>
 		</section>
 	</div>
@@ -47,8 +67,13 @@
 			return {
 				isOpen:false,
 				isOpen1:false,
+<<<<<<< HEAD
 				openImg:'/img/kai.png',
 				closeImg:'/img/kaiguan.jpg',
+=======
+				openImg:require('../../img/kai.png'),
+				closeImg:require('../../img/kaiguan.jpg'),
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				chatName:'',
 				chatphoto:''
 			}
@@ -94,7 +119,11 @@
 	}
 	
 	.pic {
+<<<<<<< HEAD
 		background: url(/img/2-small.jpg);
+=======
+		background: url(../../img/2-small.jpg);
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	}
 	
 	.chat-dialogue {

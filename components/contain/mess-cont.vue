@@ -1,7 +1,11 @@
 <template>
 	<div>
 		<h3>
+<<<<<<< HEAD
 			<a href="##" @click="toMine"><img src="/img/return.jpg" /></a><span v-text="title"></span>
+=======
+			<a href="##" @click="toMine"><img src="../../img/return.jpg" /></a><span v-text="title"></span>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</h3>
 		<ul>
 			<li class="hight">
@@ -25,7 +29,11 @@
 			<li @click="sexChange">
 				<a>
 					<span>二维码名片</span> 
+<<<<<<< HEAD
 					<!--<img src="/img/chat-info-qr.png"/>-->
+=======
+					<!--<img src="../../img/chat-info-qr.png"/>-->
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<canvas id="canvas"></canvas>
 				</a>
 			</li>
@@ -65,7 +73,11 @@
 				bool:false,
 //				config: {
 //		            value: "1123456",
+<<<<<<< HEAD
 //		            imagePath: require('/img/1.jpg'),
+=======
+//		            imagePath: require('../../img/1.jpg'),
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 //		            filter: 'color',
 //		            size:330
 //		        }
@@ -88,7 +100,11 @@
 				var _this = this;
 		    	$.ajax({
 					type:"post",
+<<<<<<< HEAD
 					url:"http://www.piyujie.top:5555/changeSex",
+=======
+					url:"http://localhost:3000/changeSex",
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					data:{
 						id:Number(_this.$store.state.id),
 						sex:_this.sex

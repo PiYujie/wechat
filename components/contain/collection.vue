@@ -1,27 +1,47 @@
 <template>
 	<div>
 		<h3>
+<<<<<<< HEAD
 			<img src="/img/return.jpg" @click="toMine"/></a><span v-text="title"></span>
+=======
+			<img src="../../img/return.jpg" @click="toMine"/></a><span v-text="title"></span>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</h3>
 		<a href="##">
 			<p>
 				<span>
+<<<<<<< HEAD
 					<img src="/img/1.jpg"/>
+=======
+					<img src="../../img/1.jpg"/>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<em>搜狗</em>
 				</span>
 				<b>20天前</b>
 			</p>
+<<<<<<< HEAD
 			<img src="/img/drift-bottle/bottle-button-fish.png"/>
+=======
+			<img src="../../img/drift-bottle/bottle-button-fish.png"/>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</a>
 		<a href="##">
 			<p>
 				<span>
+<<<<<<< HEAD
 					<img src="/img/1.jpg"/>
+=======
+					<img src="../../img/1.jpg"/>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<em>搜狗</em>
 				</span>
 				<b>20天前</b>
 			</p>
+<<<<<<< HEAD
 			<img src="/img/drift-bottle/bottle-button-fish.png"/>
+=======
+			<img src="../../img/drift-bottle/bottle-button-fish.png"/>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</a>
 	</div>
 </template>

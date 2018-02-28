@@ -2,27 +2,47 @@
 <div>
   <div class="_cover-top"  >
         <div class="top-back" >
+<<<<<<< HEAD
             <a href="#/tab/contact" style="color:white;float: left;"><div class="_ellipsis iconfont icon-return-arrow v-link-active" ><img src="/img/leftsanjiao.png" style="width:12px;height:19px;line-height: 45px;vertical-align: middle;margin-right: 5px;"/>通讯录</div></a>
         </div>
         <div class="top-title _effect" style="width: 230px;">
             <p>
+=======
+            <a href="#/tab/contact" style="color:white;float: left;"><div class="_ellipsis iconfont icon-return-arrow v-link-active" ><img src="../../img/leftsanjiao.png" style="width:12px;height:19px;line-height: 45px;vertical-align: middle;margin-right: 5px;"/>通讯录</div></a>
+        </div>
+        <div class="top-title _effect" style="width: 230px;">
+            <p >
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
                 <span style="color:white;">添加朋友</span>
             </p>
         </div>
     </div>
     <div class="search-line">
+<<<<<<< HEAD
         <span class="iconfont icon-search" ><img src="/img/search.png" style="width: 20px;vertical-align: middle;"/></span>
         <input type="text" placeholder="微信号/手机号" @input="searchChat" id="searchpeople" v-model="sear"> 
+=======
+        <span class="iconfont icon-search" ><img src="../../img/search.png" style="width: 20px;vertical-align: middle;"/></span>
+        <input type="text" placeholder="微信号/手机号" @input="searchChat" id="searchpeople"> 
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
     </div>
     <p class="_align-center" style="padding-top:8px;text-align: center;">
         <span >我的微信号:</span>
         <span >niyaowoa</span>
+<<<<<<< HEAD
         <img src="/img/contact_add-friend-my-qr.png" style="width:24px;vertical-align: middle;" class="_align-middle">   
+=======
+        <img src="../../img/contact_add-friend-my-qr.png" style="width:24px;vertical-align: middle;" class="_align-middle">   
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
     </p>
     <div class="weui_cells weui_cells_access add-friends-options" :style="{'display':isshow?'block':'none'}" style="margin-top: 10px;">
         <a class="weui_cell" href="javascript:;" >
             <div class="weui_cell_hd" >
+<<<<<<< HEAD
                 <img src="/img/contact_add-friend-reda.png" >
+=======
+                <img src="../../img/contact_add-friend-reda.png" >
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
             </div>
             <div class="weui_cell_bd weui_cell_primary" >
                 <p >雷达加朋友</p>
@@ -32,7 +52,11 @@
         </a>
         <a class="weui_cell" href="javascript:;" >
             <div class="weui_cell_hd" >
+<<<<<<< HEAD
                 <img src="/img/contact_add-friend-addgroup.png" >
+=======
+                <img src="../../img/contact_add-friend-addgroup.png" >
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
             </div>
             <div class="weui_cell_bd weui_cell_primary" >
                 <p >面对面建群</p>
@@ -42,7 +66,11 @@
         </a>
         <a class="weui_cell" href="javascript:;" >
             <div class="weui_cell_hd" >
+<<<<<<< HEAD
                 <img src="/img/contact_add-friend-scanqr.png" >
+=======
+                <img src="../../img/contact_add-friend-scanqr.png" >
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
             </div>
             <div class="weui_cell_bd weui_cell_primary" >
                 <p >扫一扫</p>
@@ -52,7 +80,11 @@
         </a>
         <a class="weui_cell" href="javascript:;" >
             <div class="weui_cell_hd" >
+<<<<<<< HEAD
                 <img src="/img/contact_add-friend-contacts.png" >
+=======
+                <img src="../../img/contact_add-friend-contacts.png" >
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
             </div>
             <div class="weui_cell_bd weui_cell_primary" >
                 <p >手机联系人</p>
@@ -62,7 +94,11 @@
         </a>
         <a class="weui_cell" href="javascript:;" >
             <div class="weui_cell_hd" >
+<<<<<<< HEAD
                 <img src="/img/contact_add-friend-offical.png" >
+=======
+                <img src="../../img/contact_add-friend-offical.png" >
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
             </div>
             <div class="weui_cell_bd weui_cell_primary" >
                 <p >公众号</p>
@@ -89,10 +125,18 @@
 			<div class="weui-dialog"  v-show="bool">
 		    <div class="weui-dialog__bd">添加成功</div>
 		    <div class="weui-dialog__ft">
+<<<<<<< HEAD
 		        <a href="#/tab/wechat" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
 		    </div>
     </div>
 		</div>
+=======
+		        <a href="#/tab/contact" class="weui-dialog__btn weui-dialog__btn_primary">知道了</a>
+		    </div>
+    </div>
+		</div>
+		
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 </div>
 </template>
 <script>
@@ -102,18 +146,29 @@
 			return{
 				isshow:true,
 				searchArr:[],
+<<<<<<< HEAD
                 bool:false,
                 sear:''
+=======
+				bool:false
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			}
 		},
 		methods:{
 			searchChat(){
 				this.isshow=false;
 				var _this = this;
+<<<<<<< HEAD
 				var stra= this.sear;
 				$.ajax({
 					type:"post",
 					url:"http://www.piyujie.top:5555/getstrager",
+=======
+				var stra= $("#searchpeople").val();
+				$.ajax({
+					type:"post",
+					url:"http://localhost:3000/getstrager",
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					dataType:'json',
 					data:{
 						strager_num:stra
@@ -132,12 +187,17 @@
 				var self=this;
 				$.ajax({
 					type:"post",
+<<<<<<< HEAD
 					url:"http://www.piyujie.top:5555/addstrager",
+=======
+					url:"http://localhost:3000/addstrager",
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					dataType:'json',
 					data:{
 						arr:JSON.stringify(self.searchArr)
 					},
 					success(data){
+<<<<<<< HEAD
 						$.ajax({
 							type:"post",
 							url:"http://www.piyujie.top:5555/deletestrager",
@@ -149,6 +209,9 @@
 								console.log('error')
 							}
 						})
+=======
+			
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					},
 					error(){
 						console.log('error')

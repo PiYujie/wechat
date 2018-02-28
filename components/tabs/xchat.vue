@@ -16,7 +16,11 @@
 
 <script>
 	import $ from 'jQuery';
+<<<<<<< HEAD
 //	import io from '/template/socket.io.js';
+=======
+//	import io from '../../template/socket.io.js';
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	export default {
 		data(){
 			return {
@@ -27,7 +31,11 @@
 			var _this = this;
 			$.ajax({
 				type:"post",
+<<<<<<< HEAD
 				url:"http://www.piyujie.top:5555/getChatList",
+=======
+				url:"http://localhost:3000/getChatList",
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				success(data){
 					var obj = JSON.parse(data)
 					for(var i in obj){
@@ -51,11 +59,21 @@
 				var _this = this;
 				this.$store.state.chat_name = this.chatArr[index].chatname;
 //				this.$store.state.my_photo = photo
+<<<<<<< HEAD
 				_this.$store.state.chat_Id=this.chatArr[index].id;
 				_this.$store.state.chat_photo=this.chatArr[index].img;
 //				$.ajax({
 //					type:"post",
 //					url:"http://www.piyujie.top:5555/getChatId",
+=======
+				console.log('自己的头像',_this.$store.state.my_photo);
+				_this.$store.state.chat_Id=this.chatArr[index].id;
+				_this.$store.state.chat_photo=this.chatArr[index].img;
+				console.log('别人的头像',_this.$store.state.chat_photo);
+//				$.ajax({
+//					type:"post",
+//					url:"http://localhost:3000/getChatId",
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 //					dataType:'json',
 //					data:{
 //						chatName:_this.$store.state.chat_name

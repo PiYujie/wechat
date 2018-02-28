@@ -6,9 +6,15 @@ var mysql = require("mysql");
 app.use(express.static('../public'));
 //创建数据库连接
 var connect = mysql.createConnection({
+<<<<<<< HEAD
 	host:'rm-wz926t7cx37l367f1do.mysql.rds.aliyuncs.com',
 	user:'pyj',
 	password:'aliyunPYJ0207',
+=======
+	host:'10.40.153.73',
+	user:'pyj',
+	password:'123',
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	database:'wechat'
 });
 // 处理post请求的请求体模块
@@ -147,6 +153,7 @@ app.post("/addstrager",function(req,res){
 		res.send(JSON.stringify(results));
 	});
 });
+<<<<<<< HEAD
 //删除添加了的联系人
 app.post("/deletestrager",function(req,res){
 	//解决跨域问题
@@ -160,6 +167,8 @@ app.post("/deletestrager",function(req,res){
 		res.send(JSON.stringify(results));
 	});
 });
+=======
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 //聊天
 io.on('connection', function (socket) {
 
@@ -174,7 +183,14 @@ io.on('connection', function (socket) {
 //		console.log('ss',data.message);
 		connect.query(`select socketid from person_info  where id = '${data.tid}'`, function(error, results, fields) {
 			if(error) throw error;
+<<<<<<< HEAD
 			io.sockets.sockets[results[0].socketid].emit('returnMess',data.message);
+=======
+			console.log(results[0].socketid);
+			console.log(1);
+			io.sockets.sockets[results[0].socketid].emit('returnMess',data.message);
+			console.log(data.message);
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		});
 		
 	})
@@ -188,6 +204,7 @@ app.post("/getChatId",function(req,res){
 		res.send(JSON.stringify(results));
 	});
 })
+<<<<<<< HEAD
 //存聊天记录
 app.post("/saveChatInfo",function(req,res){
 	//解决跨域问题
@@ -220,4 +237,8 @@ app.post("/getMyChat",function(req,res){
 })
 //监听端口
 server.listen(5555);
+=======
+//监听端口
+server.listen(3000);
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 console.log("开启服务器")

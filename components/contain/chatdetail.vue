@@ -2,9 +2,15 @@
 	<div>
 		<div class="chatTitle">
 			<p>
+<<<<<<< HEAD
 				<a href="#/tab/wechat"><img src="/img/leftsanjiao.png" /></a>微信</p>
 			<span v-text="chatName"></span>
 			<a href="#/chatInfo"><img src="/img/icon-ren.png" alt="" /></a>
+=======
+				<a href="#/tab/wechat"><img src="../../img/leftsanjiao.png" /></a>微信</p>
+			<span v-text="chatName"></span>
+			<a href="#/chatInfo"><img src="../../img/icon-ren.png" alt="" /></a>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</div>
 		<div class="chatContent">
 			<ul>
@@ -12,12 +18,21 @@
 			</ul>
 		</div>
 		<div class="chatFooter">
+<<<<<<< HEAD
 			<img src="/img/iconyuyin.png" @click="checkShow" v-show="isShowInput" />
 			<input type="text" v-show="isShowInput" id="mess" @input="saveMess" v-model="sendData"/>
 			<img src="/img/key.png" v-show="isShow" @click="checkShow" />
 			<div class="chat-say" v-show="isShow" :style="{'background-color':isMouseDown?'#c6c7ca':'#fff'}"> <span class="one" v-show="isMouseUp" @mousedown="changeStatus">按住 说话</span> <span class="two" v-show="isMouseDown" @mouseup="changeStatus">松开 结束</span> </div>
 			<p v-show="sendData==''"><img src="/img/iconxiao.png" />
 			<img src="/img/iconjia.png" /></p>
+=======
+			<img src="../../img/iconyuyin.png" @click="checkShow" v-show="isShowInput" />
+			<input type="text" v-show="isShowInput" id="mess" @input="saveMess"/>
+			<img src="../../img/key.png" v-show="isShow" @click="checkShow" />
+			<div class="chat-say" v-show="isShow" :style="{'background-color':isMouseDown?'#c6c7ca':'#fff'}"> <span class="one" v-show="isMouseUp" @mousedown="changeStatus">按住 说话</span> <span class="two" v-show="isMouseDown" @mouseup="changeStatus">松开 结束</span> </div>
+			<p v-show="sendData==''"><img src="../../img/iconxiao.png" />
+			<img src="../../img/iconjia.png" /></p>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			<button v-show="sendData!=''" @click="sendMessage">发送</button>
 		</div>
 		<div class="recording" v-show="isMouseDown">
@@ -51,8 +66,12 @@
 				chatArr:[],
 				myphoto:'',
 				chatphoto:'',
+<<<<<<< HEAD
 				insertId:'',
 				socket:io("http://www.piyujie.top:5555")
+=======
+				socket:io("http://localhost:3000")
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			}
 		},
 		methods: {
@@ -65,6 +84,7 @@
 				this.isMouseUp = !this.isMouseUp;
 			},
 			saveMess(){
+<<<<<<< HEAD
 				var send=this.sendData 
 			},
 			stringTime(sign){
@@ -79,6 +99,9 @@
 					num = '0'+num
 				}
 				return num;
+=======
+				this.sendData = $("#mess").val();
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			},
 			sendMessage(){
 				var _this = this;
@@ -94,6 +117,7 @@
 					message:this.sendData,
 					status:0
 				})
+<<<<<<< HEAD
 				//存储聊天数据
 				$.ajax({
 					type:"post",
@@ -112,10 +136,15 @@
 				});
 				
 				this.sendData = '';
+=======
+				$("#mess").val('');
+				this.sendData = $("#mess").val();
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			}
 		},
 		mounted(){
 			this.chatName = this.$store.state.chat_name;
+<<<<<<< HEAD
 			if(this.$store.state.my_photo==''){
 				this.myphoto = this.$store.state.img;
 			}else{
@@ -125,6 +154,14 @@
 			var _this = this;
 			this.socket.emit("addUser",{id:_this.$store.state.id})
 //			var socket = io("http://www.piyujie.top:5555");
+=======
+			this.myphoto = this.$store.state.my_photo;
+			this.chatphoto = this.$store.state.chat_photo;
+			console.log('',this.$store.state.chat_photo)
+			var _this = this;
+			this.socket.emit("addUser",{id:_this.$store.state.id})
+//			var socket = io("http://localhost:3000");
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 //			socket.emit("addUser",{
 //				chatName:this.$store.state.chat_name,
 //				username:this.$store.state.name
@@ -135,6 +172,7 @@
 					message:data,
 					status:1
 				});
+<<<<<<< HEAD
 				$.ajax({
 					type:"post",
 					url:"http://www.piyujie.top:5555/saveReturnMess",
@@ -170,6 +208,9 @@
 					}
 				}
 			});
+=======
+			})
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		}
 	}
 </script>
@@ -224,7 +265,10 @@
 		margin-right: 10px;
    		 margin-top: 10px;
    		 text-align: left;
+<<<<<<< HEAD
    		height: 26px;
+=======
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	}
 	.chatFooter {
 		position: fixed;
@@ -294,7 +338,11 @@
 	.voice-inner .voice-icon {
 		width: 55px;
 		height: 90px;
+<<<<<<< HEAD
 		background: url(/img/recording-bkg.png) no-repeat 50%;
+=======
+		background: url(../../img/recording-bkg.png) no-repeat 50%;
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		background-size: contain;
 	}
 	
@@ -353,7 +401,11 @@
 		width: 110px;
 		height: 110px;
 		margin: 0 auto;
+<<<<<<< HEAD
 		background-image: url(/img/record-cancel.png);
+=======
+		background-image: url(../../img/record-cancel.png);
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		background-repeat: no-repeat;
 		background-position: 50%;
 		background-size: contain;

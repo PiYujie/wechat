@@ -15,16 +15,28 @@
 				</div>
 			</div>
 			<div class="_cover-content _effect">
+<<<<<<< HEAD
 				<div class="sao-yi-sao-panel" >
 					<div :class="toggle">
 						<div class="frame"> <span class="green-line"></span> <span class="left-top"></span> <span class="right-top"></span> <span class="left-bottom"></span> <span class="right-bottom"></span> </div>
 						<div class="desc">
 							<p v-text="txt"></p>
+=======
+				<div class="sao-yi-sao-panel">
+					<div class="scan-qr-code">
+						<div class="frame"> <span class="green-line"></span> <span class="left-top"></span> <span class="right-top"></span> <span class="left-bottom"></span> <span class="right-bottom"></span> </div>
+						<div class="desc">
+							<p>将二维码/条码放入框内,即可自动扫描</p>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 						</div>
 					</div>
 				</div>
 				<ul class="sao-yi-sao-footer">
+<<<<<<< HEAD
 					<li class="scan-qr-code current" :style='{"-webkit-tap-highlight-color":aa.id==id?"rgba(0, 0, 0, 0)":""}' @click="show(aa)" v-for="aa in name">
+=======
+					<li class="scan-qr-code current" :style='{"-webkit-tap-highlight-color":aa.id==id?"rgba(0, 0, 0, 0)":""}' @click="show(aa.id)" v-for="aa in name">
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 						<div>
 							<img :src="aa.id==id?aa.afImg:aa.beImg" />
 						</div>
@@ -44,33 +56,52 @@
 						id: 1,
 						title: "二维码/条码",
 						footer: "扫码",
+<<<<<<< HEAD
 						beImg: "/img/sao-yi-sao/scan-qr-code.png",
 						afImg: "/img/sao-yi-sao/scan-qr-code_hl.png",
 						panel: "scan-qr-code",
 						text: '将二维码/条码放入框内,即可自动扫描'
+=======
+						beImg: require("../../img/sao-yi-sao/scan-qr-code.png"),
+						afImg: require("../../img/sao-yi-sao/scan-qr-code_hl.png"),
+						panel: "scan-qr-code"
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					},
 					{
 						id: 2,
 						title: "封面/电影海报",
 						footer: "封面",
+<<<<<<< HEAD
 						beImg: "/img/sao-yi-sao/scan-book.png",
 						afImg: "/img/sao-yi-sao/scan-book_hl.png",
 						panel: "scan-book",
 						text: '讲书、CD、电影海报放入框内,即可自动扫描'
+=======
+						beImg: require("../../img/sao-yi-sao/scan-book.png"),
+						afImg: require("../../img/sao-yi-sao/scan-book_hl.png"),
+						panel: "scan-book"
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					},
 					{
 						id: 3,
 						title: "街景",
 						footer: "街景",
+<<<<<<< HEAD
 						beImg: "/img/sao-yi-sao/scan-street.png",
 						afImg: "/img/sao-yi-sao/scan-street_hl.png",
 						panel: "scan-street",
 						text: '扫一下周边环境,即可自动扫描'
+=======
+						beImg: require("../../img/sao-yi-sao/scan-street.png"),
+						afImg: require("../../img/sao-yi-sao/scan-street_hl.png"),
+						panel: "scan-street"
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					},
 					{
 						id: 4,
 						title: "翻译",
 						footer: "翻译",
+<<<<<<< HEAD
 						beImg: "/img/sao-yi-sao/scan-word.png",
 						afImg: "/img/sao-yi-sao/scan-word_hl.png",
 						panel: "scan-word",
@@ -87,6 +118,21 @@
 				this.id = obj.id;
 				this.toggle = obj.panel;
 				this.txt=obj.text;
+=======
+						beImg: require("../../img/sao-yi-sao/scan-word.png"),
+						afImg: require("../../img/sao-yi-sao/scan-word_hl.png"),
+						panel: "scan-word"
+					}
+				],
+				id: 1
+			}
+		},
+		methods: {
+			show(id) {
+
+				this.id = id;
+				console.log(this.id)
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			}
 		}
 	}
@@ -271,25 +317,41 @@
 		}
 	}
 	
+<<<<<<< HEAD
 	.sao-yi-sao-panel .scan-qr-code  .frame{
+=======
+	.sao-yi-sao-panel .scan-qr-code .frame {
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		width: 70%;
 		padding-top: 70%;
 		height: 0;
 	}
 	
+<<<<<<< HEAD
 	.sao-yi-sao-panel .scan-book  .frame{
+=======
+	.sao-yi-sao-panel .scan-book .frame {
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		width: 90%;
 		padding-top: 100%;
 		height: 0;
 	}
 	
+<<<<<<< HEAD
 	.sao-yi-sao-panel .scan-street  .frame{
+=======
+	.sao-yi-sao-panel .scan-street .frame {
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		width: 90%;
 		padding-top: 100%;
 		height: 0;
 	}
 	
+<<<<<<< HEAD
 	.sao-yi-sao-panel .scan-word  .frame{
+=======
+	.sao-yi-sao-panel .scan-word .frame {
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		width: 50%;
 		height: 50px;
 	}
@@ -390,9 +452,13 @@
 		height: 2px;
 		background-color: #09bb07;
 	}
+<<<<<<< HEAD
 	.sao-yi-sao-panel .desc p{
 		color: #fff;
 	}
+=======
+	
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	.sao-yi-sao-footer {
 		display: flex;
 		justify-content: center;

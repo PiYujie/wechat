@@ -2,13 +2,21 @@
   <div>
       <div class="_cover-top"  >
         <div class="top-back" >
+<<<<<<< HEAD
             <a href="#/tab/contact" style="color:white;"><div class="_ellipsis iconfont icon-return-arrow v-link-active" ><img src="/img/leftsanjiao.png" style="width:12px;height:19px;line-height: 45px;vertical-align: middle;margin-right: 5px;"/>返回</div></a>
+=======
+            <a href="#/tab/contact" style="color:white;"><div class="_ellipsis iconfont icon-return-arrow v-link-active" ><img src="../../img/leftsanjiao.png" style="width:12px;height:19px;line-height: 45px;vertical-align: middle;margin-right: 5px;"/>返回</div></a>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
         </div>
         <a href="#/con/person_info_set">
        
         <div class="top-other" >
             <div slot="right" class="_align-right"  style="float:right;">
+<<<<<<< HEAD
                 <span ><img src="/img/pot.png" alt=""></span>
+=======
+                <span ><img src="../../img/pot.png" alt=""></span>
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
             </div>
         </div>
         </a>
@@ -96,7 +104,11 @@
 		mounted:function(){
 			var _this=this;
 			$.ajax({
+<<<<<<< HEAD
 				url:"http://www.piyujie.top:5555/showinfo",
+=======
+				url:"http://localhost:3000/showinfo",
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				type:"post",
 				dataType:'json',
 				data:{
@@ -113,7 +125,11 @@
 			getname(beizhu,scocket_id){
 				this.$store.state.chat_name=beizhu;
 				this.$store.state.socket_Id = scocket_id;
+<<<<<<< HEAD
 				var socket = io("http://www.piyujie.top:5555");
+=======
+				var socket = io("http://localhost:3000");
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				socket.emit("addUser",{
 					chatName:this.$store.state.chat_name,
 					username:this.$store.state.name
@@ -180,7 +196,11 @@
     font-size:17px;
 }
 .gender-man{
+<<<<<<< HEAD
     background-image: url(/img/contact_male.png);
+=======
+    background-image: url(../../img/contact_male.png);
+>>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
