@@ -1,11 +1,7 @@
 <template>
 	<div>
 		<h3>
-<<<<<<< HEAD
 			<a href="#/own/cont"><img src="/img/return.jpg" /></a><span v-text="title"></span>
-=======
-			<a href="#/own/cont"><img src="../../img/return.jpg" /></a><span v-text="title"></span>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</h3>
 		<ul>
 			<li @click="sexChange">
@@ -52,11 +48,7 @@
 				var _this = this;
 		    	$.ajax({
 					type:"post",
-<<<<<<< HEAD
 					url:"http://www.piyujie.top:5555/changeSex",
-=======
-					url:"http://localhost:3000/changeSex",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					data:{
 						id:Number(_this.$store.state.id),
 						sex:_this.sex
@@ -77,11 +69,7 @@
 	    	_this.sex = _this.$store.state.sex;
 	    	$.ajax({
 				type:"post",
-<<<<<<< HEAD
 				url:"http://www.piyujie.top:5555/getMessAll",
-=======
-				url:"http://localhost:3000/getMessAll",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				data:{
 					id:Number(_this.$store.state.id)
 				},

@@ -21,15 +21,9 @@
 						<header class="home-pic">
 							<div class="home-pic-base">
 								<div class="top-pic">
-<<<<<<< HEAD
 									<div class="top-pic-inner"><img :src="photo" style="width: 100%;"/></div>
 								</div>
 								<div class="top-name _ellipsis" v-text="name"></div>
-=======
-									<div class="top-pic-inner"> </div>
-								</div>
-								<div class="top-name _ellipsis">Mrs liu</div>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 							</div>
 						</header>
 						<section class="home-content">
@@ -45,7 +39,6 @@
 										<p class="weui-media-box__desc call">
 											<span id="show_time">{{item.time}}</span>
 											<transition name="toggle">
-<<<<<<< HEAD
 												<div class="box_panel">
 													<span class="panel" v-show="isShowSideBar" >
 														<em class="Zan" @click="dianZan" >
@@ -53,31 +46,15 @@
 														</em>
 														<em class="pinglun">
 															<img src="/img/ping.png" alt="" />评论
-=======
-												<div v-show="isShowSideBar" class="comment_box">
-													<span class="panel">
-														<em class="Zan" @click="dianZan" >
-															<img src="../../img/xin.png" alt="" />赞
-														</em>
-														<em class="pinglun">
-															<img src="../../img/ping.png" alt="" />评论
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 														</em>
 													</span>
 												</div>
 											</transition>
 											<span @click="showSide" class="dianZan">
-<<<<<<< HEAD
 												<img src="/img/comment.png"  />
 											</span>
 										</p>
 										<p v-show="bool" class="weui-media-box__desc name_info"><img src="/img/star.png" alt="" />{{item.contact_name}}</p>
-=======
-												<img src="../../img/comment.png"  />
-											</span>
-										</p>
-										<p v-show="bool" class="weui-media-box__desc name_info"><img src="../../img/star.png" alt="" />{{item.contact_name}}</p>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 									</div>
 								</a>
 							</div>
@@ -103,13 +80,9 @@
 				arr: [],
 				num: 0,
 				isShowSideBar: false,
-<<<<<<< HEAD
 				bool: false,
 				photo:this.$store.state.img,
 				name:this.$store.state.name,
-=======
-				bool: false
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			};
 		},
 		mounted: function() {
@@ -117,52 +90,33 @@
 		},
 		methods: {
 			showMore() {
-<<<<<<< HEAD
 				console.log(this.$store.state)
-=======
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				var _this = this;
 				this.num++;
 				$.ajax({
 					type: "post",
-<<<<<<< HEAD
 					url: "http://www.piyujie.top:5555/getFriendCircleTrend",
-=======
-					url: "http://localhost:3000/getFriendCircleTrend",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					async: true,
 					dataType: "json",
 					data: {
 						id: _this.num
-<<<<<<< HEAD
 						
 					},
 					success: function(data) {
 						//console.log(data)
 						
-=======
-					},
-					success: function(data) {
-						console.log(data)
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 						_this.arr = _this.arr.concat(data);
 					}
 				});
 			},
 			showSide() {
 				this.isShowSideBar = !this.isShowSideBar;
-<<<<<<< HEAD
 				//console.log(this.isShowSideBar)
 			},
 			dianZan() {
 				this.bool = !this.bool;
 				this.isShowSideBar = false;
 				
-=======
-			},
-			dianZan() {
-				this.bool = !this.bool;
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			}
 		}
 	};
@@ -282,11 +236,7 @@
 		margin-top: -90px;
 		position: relative;
 		height: 370px;
-<<<<<<< HEAD
 		background: url(/img/maomao.jpg) no-repeat center center;
-=======
-		background: url(../../img/find-bg.png) no-repeat center center;
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		background-size: cover;
 	}
 	
@@ -326,11 +276,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-<<<<<<< HEAD
 		
-=======
-		background-image: url(../../img/touxiang.jpg);
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	}
 	
 	.home-content {
@@ -373,7 +319,6 @@
 		overflow: hidden;
 		line-height: 35px;
 		height: 35px;
-<<<<<<< HEAD
 		position: relative;
 		border-radius: 3px;
 	}
@@ -383,12 +328,6 @@
 		height: 30px;
 		position: absolute;
 		left: 274px;
-=======
-	}
-	
-	.call .dianZan {
-		float: right;
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	}
 	
 	.call .dianZan img {
@@ -396,7 +335,6 @@
 		height: 30px;
 		margin-top: 4px;
 	}
-<<<<<<< HEAD
 	.call .box_panel {
 		position: absolute;
 		left: 112px;
@@ -411,29 +349,11 @@
 		position: absolute;
 		left: 0px;
 		top: 0;
-=======
-	
-	.call .comment_box {
-		position: fixed;
-		width: 160px;
-		line-height: 35px;
-		height: 35px;
-		border-radius: 3px;
-		left: 163px;
-		margin-top: -37px;
-	}
-	
-	.call .panel {
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		display: inline-block;
 		width: 160px;
 		height: 35px;
 		background: #333333;
 		line-height: 35px;
-<<<<<<< HEAD
-=======
-		margin-right: -160px;
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	}
 	
 	.call .panel .Zan {
@@ -486,38 +406,20 @@
 		margin-left: 5px;
 	}
 	
-<<<<<<< HEAD
 	/*.toggle-enter-active {
 		animation: move 3s;
 	}
 	
 	.toggle-leave-active {
 		animation: move 3s;
-=======
-	.toggle-enter-active {
-		animation: move 1s;
-	}
-	
-	.toggle-leave-active {
-		animation: move .5s;
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	}
 	
 	@keyframes move {
 		from {
-<<<<<<< HEAD
 			left: 200px
 		}
 		to {
 			left: 114px
 		}
 	}*/
-=======
-			right: -160px
-		}
-		to {
-			right: 0
-		}
-	}
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 </style>

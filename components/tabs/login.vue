@@ -42,11 +42,7 @@
 //	   				this.bool = false;
 	   				$.ajax({
 						type:"post",
-<<<<<<< HEAD
 						url:"http://www.piyujie.top:5555/login",
-=======
-						url:"http://localhost:3000/login",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 						data:{
 							username:_this.name,
 							password:_this.password
@@ -57,14 +53,8 @@
 								_this.$store.state.id = data[0].id;
 								_this.$store.state.sex = data[0].sex;
 								_this.$store.state.name = data[0].my_name;
-<<<<<<< HEAD
 								_this.$store.state.img = data[0].my_photo;
 								location.href = "#/tab/wechat";
-=======
-								_this.$store.state.my_photo = data[0].my_photo;
-//								location.href = "#/tab/wechat";
-								_this.$router.push("/tab/wechat")
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 							}
 							else{
 								_this.bool = true;

@@ -92,21 +92,12 @@
 		},
 		data() {
 			return {
-<<<<<<< HEAD
 				friendImg: '/img/find_icon-circle.png',
 				saoImg:'/img/find_icon-qrcode.png',
 				yaoImg:'/img/find_icon-shake.png',
 				piaoImg:'/img/find_icon-bottle.png',
 				shopImg:'/img/find_icon-shopping.png',
 				gameImg:'/img/find_icon-moregame.png'
-=======
-				friendImg: require('../../img/find_icon-circle.png'),
-				saoImg:require('../../img/find_icon-qrcode.png'),
-				yaoImg:require('../../img/find_icon-shake.png'),
-				piaoImg:require('../../img/find_icon-bottle.png'),
-				shopImg:require('../../img/find_icon-shopping.png'),
-				gameImg:require('../../img/find_icon-moregame.png')
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			}
 		}
 	}

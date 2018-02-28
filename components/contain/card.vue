@@ -2,43 +2,27 @@
 	<div class="change">
 		<h3>
 			<p>
-<<<<<<< HEAD
 				<a href="#/tab/mine"><img src="/img/return.jpg" /></a><span v-text="title"></span>
-=======
-				<a href="#/tab/mine"><img src="../../img/return.jpg" /></a><span v-text="title"></span>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			</p>
 			<em>消息通知</em>
 		</h3>
 		<div>
 			<h4 class="bett">
 				<span>
-<<<<<<< HEAD
 					<img src="/img/me_more-my-album.png"/>
-=======
-					<img src="../../img/me_more-my-album.png"/>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<em>卡</em>
 				</span>
 				<b>查看全部</b>
 			</h4>
 			<h4>
 				<span>
-<<<<<<< HEAD
 					<img src="/img/me_more-my-album.png"/>
-=======
-					<img src="../../img/me_more-my-album.png"/>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<em>朋友的优惠券</em>
 				</span>
 			</h4>
 			<h4>
 				<span>
-<<<<<<< HEAD
 					<img src="/img/me_more-my-album.png"/>
-=======
-					<img src="../../img/me_more-my-album.png"/>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<em>我的票券</em>
 				</span>
 			</h4>

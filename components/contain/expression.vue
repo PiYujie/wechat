@@ -1,19 +1,11 @@
 <template>
 	<div>
 		<h3>
-<<<<<<< HEAD
 			<img src="/img/return.jpg" @click="toMine"/></a><span v-text="title"></span>
 		</h3>
 		<p class="margins">
 			<em>下载最新表情</em>
 			<img src="/img/drift-bottle/bottle-writing.png"/>
-=======
-			<img src="../../img/return.jpg" @click="toMine"/></a><span v-text="title"></span>
-		</h3>
-		<p class="margins">
-			<em>下载最新表情</em>
-			<img src="../../img/drift-bottle/bottle-writing.png"/>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</p>
 	</div>
 </template>

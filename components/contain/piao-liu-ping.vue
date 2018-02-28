@@ -129,11 +129,7 @@
 	
 	._cover-content {
 		color: #979797;
-<<<<<<< HEAD
 		background-image: url(/img/drift-bottle/bottle-bkg.jpg);
-=======
-		background-image: url(../../img/drift-bottle/bottle-bkg.jpg);
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -161,11 +157,7 @@
 		width: 100%;
 		left: 0;
 		color: #ffffff;
-<<<<<<< HEAD
 		background-image: url(/img/drift-bottle/bottle-board.png);
-=======
-		background-image: url(../../img/drift-bottle/bottle-board.png);
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center bottom;
@@ -185,7 +177,6 @@
 	}
 	
 	.drift-bottle-footer li.throw div {
-<<<<<<< HEAD
 		background-image: url(/img/drift-bottle/bottle-button-throw.png);
 	}
 	
@@ -195,16 +186,5 @@
 	
 	.drift-bottle-footer li.bottle div {
 		background-image: url(/img/drift-bottle/bottle-button-mine.png);
-=======
-		background-image: url(../../img/drift-bottle/bottle-button-throw.png);
-	}
-	
-	.drift-bottle-footer li.pickup div {
-		background-image: url(../../img/drift-bottle/bottle-button-fish.png);
-	}
-	
-	.drift-bottle-footer li.bottle div {
-		background-image: url(../../img/drift-bottle/bottle-button-mine.png);
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	}
 </style>

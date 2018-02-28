@@ -4,11 +4,7 @@
 			<form class="weui-search-bar__form">
 				<div class="weui-search-bar__box">
 					<i class="weui-icon-search"></i>
-<<<<<<< HEAD
 					<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="" @blur="searchChat" v-model="inputtxt">
-=======
-					<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="" @blur="searchChat">
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					<a href="javascript:" class="weui-icon-clear" id="searchClear" @click="clearSearch"></a>
 				</div>
 				<label class="weui-search-bar__label" id="searchText">
@@ -40,29 +36,18 @@
 	export default {
 		data(){
 			return {
-<<<<<<< HEAD
 				searchArr:[],
 				inputtxt:''
-=======
-				searchArr:[]
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			}
 		},
 		methods:{
 			searchChat(){
 				this.searchArr = [];
 				var _this = this;
-<<<<<<< HEAD
 				var sea = this.inputtxt;
 				$.ajax({
 					type:"post",
 					url:"http://www.piyujie.top:5555/getSearchList",
-=======
-				var sea = $("#searchInput").val();
-				$.ajax({
-					type:"post",
-					url:"http://localhost:3000/getSearchList",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					data:{
 						sea:sea
 					},

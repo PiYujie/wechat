@@ -2,11 +2,7 @@
 	<div class="change">
 		<h3>
 			<p>
-<<<<<<< HEAD
 				<a href="#/own"><img src="/img/return.jpg" /></a><span v-text="title"></span>
-=======
-				<a href="#/own"><img src="../../img/return.jpg" /></a><span v-text="title"></span>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 			</p>
 			<button @click="change">保存</button>
 		</h3>
@@ -35,11 +31,7 @@
 	   			var _this = this;
 		    	$.ajax({
 					type:"post",
-<<<<<<< HEAD
 					url:"http://www.piyujie.top:5555/changeName",
-=======
-					url:"http://localhost:3000/changeName",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 					data:{
 						id:Number(_this.$store.state.id),
 						name:_this.name

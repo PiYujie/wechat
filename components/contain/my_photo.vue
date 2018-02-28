@@ -1,11 +1,7 @@
 <template>
 	<div>
 		<h3 class="header">
-<<<<<<< HEAD
 			<img src="/img/return.jpg" @click="toMine"/></a><span v-text="title"></span>
-=======
-			<img src="../../img/return.jpg" @click="toMine"/></a><span v-text="title"></span>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 		</h3>
 		<div class="bg">
 			<p>
@@ -17,11 +13,7 @@
 			<h3>
 				<span>今天</span>
 				<p>
-<<<<<<< HEAD
 					<img src="/img/camera_03.jpg"/>
-=======
-					<img src="../../img/camera_03.jpg"/>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				</p>
 			</h3>
 			<h4 v-for="d in arr">
@@ -37,11 +29,7 @@
 				<span>04<em>4月</em></span>
 				<div>
 					<p>
-<<<<<<< HEAD
 						<img src="/img/2.jpg"/>
-=======
-						<img src="../../img/2.jpg"/>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 						<i>被拐的儿童拯救事件</i>
 					</p>
 				</div>
@@ -73,11 +61,7 @@
 	    	var arr = [];
 	    	$.ajax({
 				type:"post",
-<<<<<<< HEAD
 				url:"http://www.piyujie.top:5555/getTrend",
-=======
-				url:"http://localhost:3000/getTrend",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				data:{
 					id:Number(_this.$store.state.id)
 				},

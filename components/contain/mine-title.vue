@@ -69,11 +69,7 @@
 	    	var _this = this;
 	    	$.ajax({
 				type:"post",
-<<<<<<< HEAD
 				url:"http://www.piyujie.top:5555/getMessAll",
-=======
-				url:"http://localhost:3000/getMessAll",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 				data:{
 					id:Number(_this.$store.state.id)
 				},
@@ -149,11 +145,7 @@
 }
 .code i{
 	height: 3rem;width: 0.9rem;
-<<<<<<< HEAD
 	background: url(/img/right.jpg) no-repeat center;
-=======
-	background: url(../../img/right.jpg) no-repeat center;
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
 	padding-left: 2rem;
 }
 .left{

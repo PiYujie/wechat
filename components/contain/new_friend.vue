@@ -2,19 +2,11 @@
 <div>
     <div class="_cover-top"  >
         <div class="top-back" >
-<<<<<<< HEAD
             <a href="#/tab/contact" style="color:white;"><div class="_ellipsis iconfont icon-return-arrow v-link-active" ><img src="/img/leftsanjiao.png" style="width:12px;height:19px;line-height: 45px;vertical-align: middle;margin-right: 5px;"/>通讯录</div></a>
         </div>
         <div class="top-other" >
             <div slot="right" class="_align-right"  style="float:right;">
                 <span ><a href="#/con/add_friend"><img src="/img/jia.png" alt=""></a></span>
-=======
-            <a href="#/tab/contact" style="color:white;"><div class="_ellipsis iconfont icon-return-arrow v-link-active" ><img src="../../img/leftsanjiao.png" style="width:12px;height:19px;line-height: 45px;vertical-align: middle;margin-right: 5px;"/>通讯录</div></a>
-        </div>
-        <div class="top-other" >
-            <div slot="right" class="_align-right"  style="float:right;">
-                <span ><a href="#/con/add_friend"><img src="../../img/jia.png" alt=""></a></span>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
             </div>
         </div>
         <div class="top-title _effect" >
@@ -27,11 +19,7 @@
     <div class="weui_cell" >
         <dl class="add-tel-address" >
             <dt >
-<<<<<<< HEAD
                 <img src="/img/phone.png" alt="">
-=======
-                <img src="../../img/phone.png" alt="">
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
             </dt>
             <dd >添加手机联系人</dd>
         </dl>

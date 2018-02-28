@@ -6,44 +6,28 @@
         <div class="weui_cells_contact-head weui_cells weui_cells_access" style="margin-top:-1px">
             <a class="weui_cell" href="#/con/new_friend" >
                 <div class="weui_cell_hd" >
-<<<<<<< HEAD
                     <img class="img-obj-cover" src="/img/contact_top-friend-notify.png" > </div>
-=======
-                    <img class="img-obj-cover" src="../../img/contact_top-friend-notify.png" > </div>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
                 <div class="weui_cell_bd weui_cell_primary" >
                     <p >新的朋友</p>
                 </div>
             </a>
             <a class="weui_cell" href="#/con/group_chat" >
                 <div class="weui_cell_hd" >
-<<<<<<< HEAD
                     <img class="img-obj-cover" src="/img/contact_top-addgroup.png" > </div>
-=======
-                    <img class="img-obj-cover" src="../../img/contact_top-addgroup.png" > </div>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
                 <div class="weui_cell_bd weui_cell_primary" >
                     <p >群聊</p>
                 </div>
             </a>
             <a class="weui_cell" href="" >
                 <div class="weui_cell_hd" >
-<<<<<<< HEAD
                     <img class="img-obj-cover" src="/img/contact_top-tag.png" > </div>
-=======
-                    <img class="img-obj-cover" src="../../img/contact_top-tag.png" > </div>
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
                 <div class="weui_cell_bd weui_cell_primary" >
                     <p >标签</p>
                 </div>
             </a>
             <a class="weui_cell" href="" >
                 <div class="weui_cell_hd" >
-<<<<<<< HEAD
                     <img class="img-obj-cover" src="/img/contact_top-offical.png" >
-=======
-                    <img class="img-obj-cover" src="../../img/contact_top-offical.png" >
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
                 </div>
                 <div class="weui_cell_bd weui_cell_primary" >
                     <p >公众号</p>
@@ -83,11 +67,7 @@
     	mounted:function(){
     		var _this=this;
     		$.ajax({
-<<<<<<< HEAD
     			url:"http://www.piyujie.top:5555/getcontactList",
-=======
-    			url:"http://localhost:3000/getcontactList",
->>>>>>> f905bfc731dd1c0bdd1baab0ab910bd538b1e3cf
     			type:"post",
     			success(data){
 					var obj = JSON.parse(data)	
